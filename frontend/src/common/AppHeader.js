@@ -46,9 +46,9 @@ class AppHeader extends Component {
         }
 
         return (
-            <Header className="app-header" style={{background:'#FFF'}}>
+            <Header className="app-header" >
             <div className="container">
-              <div className="app-title" >
+              <div className="app-title" onClick={()=>this.props.onCollapsed(!this.props.collapsed)}>
                   {this.props.isAuthenticated?
                       <Icon
                           className="trigger"
